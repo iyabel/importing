@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+#wrap{}
+
+/*header*/
+#header{}
+.headInner{width: 940px;margin: 0 auto}
+
+.util{float: left; padding-top:20px ;}
+.util li{float: left; padding-left: 10px;}
+.util li img{}
+
+.topMenu{float: right; padding-top: 20px}
+.topMenu li{float: left; padding-right: 10px}
+.topMenu li img{}
+
+.headInner h1{text-align: center;padding-top: 10px;padding-bottom:7px;}
+
+.nav{height: 30px;}
+.nav li{float: left;width: 16.667%;text-align: center; }
+.nav li a{}
+.nav li a img{}
+/*header end*/
+/*contents*/
+#contents{}
+
+.mainVisual{height: 500px;}
+/*padding을 주는 대신 height으로 아래쪽 여백을 대신함.*/
+.mainVisual img{position:absolute; left:50%; /*margin-left:-960px;*/transform: translateX(-50%);}
+/*앱솔루트. contents에 relative를 걸지 않았기 때문에. body 기준*/
+
+    /*conInner*/
+.conInner{width: 940px;margin:0 auto;}
+/*ul.주소 적어주기. 돔구조에 대한 인지 최적화를 위해*/
+
+        /*conWrap01*/
+ul.conWrap01{}
+/*conWrap01은 자식 li도 있고, 후손 li도 있다. 적절한 부등호를 사용하자.*/
+
+/*   cf.div의 float는 순서 상관 없지만, ul내 li들의 float는 left/right에 따라 순서가 달라진다.
+ul 태그에 float : right; 를 준 다음 추가 li 태그에 float : left;를 해주면 순서를 거꾸로 적지 않습니다.  */
+
+ul.conWrap01 > li{float:left;height: 235px;}
+ul.conWrap01 > li > h3{padding-bottom: 5px;}
+ul.conWrap01 > li > p{}
+
+ul.conWrap01 > li:nth-child(1){width: 240px;background:none;}
+ul.conWrap01 > li:nth-child(2){width: 490px;}
+ul.conWrap01 > li:nth-child(2) > h3{padding-bottom: 9px;}
+ul.conWrap01 > li:nth-child(2) > p{font-size: 13px;padding-bottom: 34px;color:#666;}
+ul.conWrap01 > li:nth-child(2) ul{}
+ul.conWrap01 > li:nth-child(2) ul li{float:left;width: 33.334%;font-size: 14px;text-align: center;color:#666;background: url("../images/mall_bar01.gif") no-repeat}
+ul.conWrap01 > li:nth-child(2) > ul li.first{background:none;}
+ul.conWrap01 > li:nth-child(3)){width: 200px;}
+        /*conWrap01 end*/
+
+        /*conWrap02*/
+.conInner div.conWrap02{font-size: 0;}
+.conWrap02{margin-top:2px;}
+/*.conWrap02{padding-top:2px;}*/
+/* float:claer를 준 경우 padding 사용 가능.*/
+/*.conWrap02 img{float:left;display: block;box-sizing: border-box;overflow: hidden;}*/
+
+        /*conWrap02 end*/
+    
+        /*conWrap03*/
+.conWrap03{}
+.academy{font-size: 13px;font-family:"돋움";margin-top:30px;border-bottom:3px solid #8b0000; height:122px;}
+
+/* word-spacing:-1px : 글자간격(띄어쓰기간격)
+    letter-spacing:-1px : 자간
+*/
+.academy > li:nth-child(1){word-spacing: -0.5px;}
+.academy > li:nth-child(2){word-spacing: -2.4px;}
+.academy > li:nth-child(3){word-spacing: -0.5px;}
+
+.academy > li{float: left;width: 25%;height: 110px;color:#444;}
+.academy > li > h3{height: 25px;}
+.academy > li > p{width: 90%;line-height: 1.7;}
+.academy > li > span{padding-top: 10px;display: block;color: #666}
+
+.news{}
+.news ul{}
+.news ul li{height: 22px;}
+.news ul li span{float:right;padding-right: 20px;}
+
+.list {}
+.list ul{}
+.list ul li{padding-top:10px; float: left;width: 33.334%;text-align: center;}
+.list ul li p{padding-top: 10px;}
+            /*academy end*/
+        /*conWrap03 end*/
+
+        /*conWrap04*/
+.conWrap04{padding-top: 35px;}
+
+.live h3{height: 45px;}
+.live h3 img
+.live ul{}
+.live ul li{float:left; width: 25%;}
+.live ul li img{padding-top:5px;width: 60px;height: 60px;float:left;padding-right: 9px;}
+.live ul li span{float:left; font-size: 13px;height: 20px;color:#0455a6;}
+.live ul li p{font-size: 13px;padding-left: 10px;color:#666;width: 215px;letter-spacing:-2px;padding-bottom: 40px;}
+        /*conWrap04 end*/
+    /*conInner end*/
+/*section end*/
+
+/*clear*/
+/*clear end*/
+
+/*footer*/
+#footer{background: url("../images/bg_footer.gif"); height: 200px;}
+.footerInner{width: 940px;margin: 0 auto;}
+
+.footerInner ul{padding-top: 40px;}
+.footerInner ul li{background: url("../images/bg_footer_bar01.gif") no-repeat;line-height: 12px; float:left; padding: 0 15px; font-size: 12px; }
+.footerInner ul li a{color:#fff}
+
+.footerInner p{padding-top:15px;color:#fff; line-height: 1.7;font-size: 12px;padding-left:10px;}
+.footerInner ul li.bold a{font-weight: bold;}
+.footerInner ul li.first{background: none;}
+/*footer end*/
+/*body end*/
+

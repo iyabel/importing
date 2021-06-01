@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+*{margin: 0;padding: 0;}
+
+ul , ol, li{list-style: none}
+
+a{text-decoration: none; color: #444}
+
+.clear{clear: both}
+/*
+
+div, h1, h2, header , footer, section {border: 1px solid red; box-sizing: border-box}
+li{border: 1px solid blue; box-sizing: border-box}
+*/
+
+
+    
